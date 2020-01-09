@@ -1,0 +1,56 @@
+【用例名稱】
+
+  子Apple推播系統與連線APNs機制
+
+【場景】
+
+  Who:  
+  Where:  
+  When:   子Apple推播系統與APNs連線之前
+
+【用例描述】
+
+  1. 創建JSON TOKEN;
+  	1.1  alg
+	1.2  kid
+    	1.3  iss
+	1.4  iat
+  2. 使用authentication token signing key加密JSON TOKEN (JWT);
+  3. 加密過後的token用Base64URL 包在header;
+  4. 送出推播至Apns;
+  5. 每40分鐘步驟1到3重複一次;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+【用例名稱】
+
+  子Apple推播系統送出推播到APNs
+
+【場景】
+
+  Who:  
+  Where:  
+  When:   子Apple推播系統送出推播到APNs之前
+
+【用例描述】
+
+  1. 創
+ 
